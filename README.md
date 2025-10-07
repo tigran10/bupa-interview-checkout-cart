@@ -19,7 +19,7 @@ Checkout:
 1. Implement the TODOs in `Cart` and `Checkout`:
    - `Cart.add(String sku, Money unitPrice, Integer quantity)` (treat `null` as 1; reject non‑positive)
    - `Cart.subtotal()`
-   - `Checkout.total()` (subtotal − sum(discounts), clamped ≥ 0)
+   - `Checkout.total()`
 2. Implement two discounts as static factories in `Checkout` (no extra classes!):
    - `multiBuy(String sku, int n, int m)` — “3 for 2” style discount
    - `thresholdPercent(Money threshold, int percent)` — e.g., 10% off when subtotal ≥ £100
