@@ -1,14 +1,18 @@
 
-# Simple Checkout Kata (≤ 3 classes)
+# Simple Checkout Kata
 
 **Goal:** tiny, clean, 45‑min pairing focused on OOP choices, clean code, testing.
-Only three production files:
+
+Production files:
 - `Money` (value object)
 - `Cart` (holds lines)
 - `Checkout` (applies discount rules via a tiny functional interface)
 
 ## Scenario
+Cart:
 You scan items by SKU (`String`) with a unit price. The cart computes a subtotal.
+
+Checkout:
 `Checkout` then applies a list of `DiscountRule`s to compute a final total.
 
 ## Your Tasks
